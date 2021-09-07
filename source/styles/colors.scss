@@ -1,0 +1,58 @@
+/* no sense variables */
+$inherit: inherit;
+$transparent: transparent;
+$white: #ffffff;
+$black: #000000;
+
+$gray-lightest: rgba(248, 248, 248, 0.2);
+$gray-lighter: #f8f8f8;
+$gray-light: rgba(245, 245, 245, 1);
+$gray: #999;
+$gray-darker: #767676;
+$gray-darkest: #5e5e5e;
+
+$green: #72b626;
+
+$yellow: #ffb400;
+$yellow-darker: #d89900;
+/* variables with sense */
+/* *********************************************************************** */
+$navigation--BGColor: $white;
+$navigation__item-content-hover--Color: $black;
+$navigation__item-content--Color: $gray-darker;
+$navigation__item-content_active--Color:$gray-darkest;
+$navigation__item--underlineColor: $gray-darker;
+$navigation__item-img_active: $yellow;
+$navigation__sign--Color: $gray;
+$navigation__sign-bolded--Color: $gray-darker;
+
+$greetings-screen--BGColor: $gray-lighter;
+$my-person-screen--Color: $gray-darker;
+$greetings-screen__img-frame--BGColor: $yellow;
+$greetings-screen__title-colored--color: $yellow;
+$greetings-screen__text--Color: $gray-darker;
+$greetings-screen__contact-img-hover--Color: $yellow;
+$greetings-screen__contact-img-active--Color: $yellow-darker;
+$my-person-screen__title--Color: $black;
+$my-person-screen__bio-name--Color: $black;
+
+$portfolio-screen--Color: $gray-darker;
+$portfolio-screen__title--Color: $black;
+$portfolio-screen__button-hover--Color: darken($gray-darkest,10%);
+$portfolio-screen__button_active--Color : $portfolio-screen__button-hover--Color;
+$portfolio-screen__example-hrefs--BGColor: $green;
+$portfolio-screen__example-href-img-hover: $yellow;
+
+$service-card__description--Color: $gray-darker;
+$service-card__title--Color: $black;
+
+$skill-card__progress-bar-line--Stroke:$gray-lighter;
+$skill-card__progress-bar-line_filled--Stroke: $green;
+$skill-card__title--Color: $black;
+$skill-card--BGColor: $gray-light;
+
+$skills-and-services-screen__service-title--Color: $black;
+$skills-and-services-screen__skills-title--Color: $black;
+$skills-and-services-screen__CV-button--Color: $white;
+$skills-and-services-screen__CV-button--BGColor: $black;
+$skills-and-services-screen__CV-button-hover--BGColor: $yellow;
