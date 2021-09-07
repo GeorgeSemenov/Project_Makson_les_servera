@@ -1,0 +1,6 @@
+mixin header__languages(modifier)
+  if modifier["languages"] == undefined
+    - modifier["languages"] = [{language:"Ru", languageHref:'./'},{language:"En", languageHref: "./indexEn.html"}];
+  ul.header__languages&attributes(attributes)
+    each language in modifier.languages
+      +header__language(language)

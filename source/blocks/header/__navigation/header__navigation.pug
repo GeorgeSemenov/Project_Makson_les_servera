@@ -1,0 +1,7 @@
+mixin header__navigation(modifier)
+  if modifier["navigationItems"] == undefined
+    - modifier["navigationItems"] = [{navigationItem: 'empty array navigationItems'}];
+  nav.header__navigation&attributes(attributes)
+    ul
+      each item in modifier.navigationItems
+        +header__navigation-item(modifier)

@@ -1,4 +1,5 @@
 include ../../blocks/favicon/favicon.pug
+include ../../blocks/header/header.pug
 doctype html
 html(lang="ru")
   head
@@ -8,5 +9,6 @@ html(lang="ru")
     //-В папке build будет лежать файл фавикона, строки которая находится ниже позволит подцепить этот файл
     +favicon()
   body
+    +header()
     main
       

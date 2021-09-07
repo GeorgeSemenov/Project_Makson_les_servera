@@ -1,0 +1,4 @@
+mixin header__logo-text(modifier)
+  if modifier["logoText"] == undefined
+    - modifier["logoText"] = "ЛЕС СЕВЕРА";
+  p.header__logo-text&attributes(attributes)!=modifier.logoText

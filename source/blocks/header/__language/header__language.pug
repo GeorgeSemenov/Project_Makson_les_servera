@@ -1,0 +1,5 @@
+mixin header__language(modifier)
+  if modifier["languageHref"] == undefined
+    - modifier["languageHref"] = "#!";
+  li.header__language&attributes(attributes)
+    a(href=modifier.languageHfref)!=modifier.language

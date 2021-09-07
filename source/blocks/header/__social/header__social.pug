@@ -1,0 +1,6 @@
+mixin header__social(modifier)
+  if modifier["socialPic"] == undefined
+    - modifier["socialPic"] = 'facebook';
+  if modifier["socialHref"] == undefined
+    - modifier["socialHref"] = "#!";
+  a.header__social&attributes(attributes)
