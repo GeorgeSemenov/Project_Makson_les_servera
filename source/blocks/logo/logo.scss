@@ -1,0 +1,15 @@
+@import '__text/logo__text';
+@import '__pic/logo__pic';
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: $logo-BGColor;
+  border-radius: 8px;
+  padding-left: 11px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 4px;
+
+  &:hover{background-color: darken($logo-BGColor,20%);}
+  &:active{background-color: darken($logo-BGColor,40%);}
+}

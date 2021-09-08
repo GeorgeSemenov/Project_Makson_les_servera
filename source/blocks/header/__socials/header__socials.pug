@@ -1,6 +1,6 @@
 mixin header__socials(modifier)
   if modifier["socialPics"] == undefined
-    - modifier["socialPics"] = [{socialPic: 'VK'}];
+    - modifier["socialPics"] = [{socialPic: 'VK', href:"!#"},{socialPic: 'facebook', href:"!#"},{socialPic: 'instagram', href:"!#"}];
   ul.header__socials&attributes(attributes)
     each item in modifier.socialPics 
       +header__social(item)

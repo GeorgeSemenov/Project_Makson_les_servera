@@ -6,7 +6,14 @@ $black: #000000;
 
 $green: #22A627;
 
+$gray: #b3b3b3;
+
 /* variables with sense */
 /* *********************************************************************** */
 
+$logo-BGColor: $white;
+
 $header__logo-text--Color: $green;
+$header--Color: $black;
+$header__navigation-item--Color: $header--Color;
+$header__navigation-item-active--Color: $gray;

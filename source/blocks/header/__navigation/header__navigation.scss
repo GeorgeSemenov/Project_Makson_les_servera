@@ -1,1 +1,8 @@
-.header__navigation {}
+.header__navigation {
+  padding-top: 7px;
+  min-width: 39%;
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+}

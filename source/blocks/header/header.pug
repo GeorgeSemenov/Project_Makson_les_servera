@@ -1,17 +1,15 @@
-include __logo-pic/header__logo-pic.pug
 include __social/header__social.pug
 include __language/header__language.pug
 include __languages/header__languages.pug
 include __socials/header__socials.pug
 include __navigation-item/header__navigation-item.pug
 include __navigation/header__navigation.pug
-include __logo-text/header__logo-text.pug
-include __logo/header__logo.pug
+include ../logo/logo.pug
 mixin header(modifier)
   if modifier == undefined
     - modifier = {}
   .header&attributes(attributes)
-    +header__logo(modifier)
+    +logo(modifier)(class="header__logo")
     +header__navigation(modifier)
     +header__socials(modifier)
     +header__languages(modifier)

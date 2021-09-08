@@ -1,0 +1,6 @@
+include __pic/logo__pic.pug
+include __text/logo__text.pug
+mixin logo(modifier)
+  a.logo(href="#!")&attributes(attributes)
+    +logo__pic(modifier)
+    +logo__text(modifier)
