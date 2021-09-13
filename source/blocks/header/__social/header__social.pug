@@ -2,7 +2,7 @@ include ../../../img/svg/facebook.pug
 include ../../../img/svg/VK.pug
 include ../../../img/svg/instagram.pug
 include ../../../img/svg/facebookNew.pug
-include ../../../img/svg/VKNew.pug
+include ../../../img/svg/vkNew.pug
 include ../../../img/svg/instagramNew.pug
 mixin header__social(modifier)
   if modifier["socialPic"] == undefined
@@ -10,15 +10,15 @@ mixin header__social(modifier)
   if modifier["socialHref"] == undefined
     - modifier["socialHref"] = "#!";
   a.header__social&attributes(attributes)
-    span
-      +facebook()
-      +VK()
-      +instagram()
+    //- span
+    //-   +facebook()
+    //-   +VK()
+    //-   +instagram()
 
     case modifier.socialPic
       when "facebook"
         +facebookNew()
       when "VK"
-        +VKNew()
+        +vkNew()
       when "instagram"
         +instagramNew()
