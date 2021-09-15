@@ -2,5 +2,9 @@
   display: flex;
   font-size: 14px;
   line-height: 16px;
-  padding-top: 7px
+  padding-top: 7px;
+
+  @media (max-width: $xl - 1px){
+    order: 3;
+  }
 }

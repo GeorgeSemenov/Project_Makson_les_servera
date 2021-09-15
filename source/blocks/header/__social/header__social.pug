@@ -9,7 +9,7 @@ mixin header__social(modifier)
     - modifier["socialPic"] = 'facebook';
   if modifier["socialHref"] == undefined
     - modifier["socialHref"] = "#!";
-  a.header__social&attributes(attributes)
+  a.header__social(href=modifier.socialHref)&attributes(attributes)
     //- span
     //-   +facebook()
     //-   +VK()

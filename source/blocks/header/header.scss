@@ -1,3 +1,5 @@
+@import '__sandwich-line/header__sandwich-line';
+@import '__sandwich-button/header__sandwich-button';
 @import '__logo/header__logo';
 @import '__social/header__social';
 @import '__language/header__language';
@@ -7,6 +9,7 @@
 @import '__navigation/header__navigation';
 @import '../logo/logo';
 .header {
+  background-color: $header--BGColor;
   font-family: 'Roboto' ,"Arial" , sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -23,7 +26,11 @@
   transform: translateX(-50%);
 
   @media (max-width: $xl - 1px){
-    max-width: none;
-    @include px(15px);
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 25px;
+    flex-wrap: wrap;
+    transition: height 0.3s linear ;
+    overflow: hidden;
   }
 }

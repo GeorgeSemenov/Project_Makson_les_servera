@@ -1,8 +1,21 @@
 .header__navigation {
   padding-top: 7px;
   min-width: 39%;
+  margin-right: 175px;
+  flex-grow: 1;
   ul{
     display: flex;
     justify-content: space-between;
+  }
+  @media (max-width: $xl - 1px){
+    border-top: 1px solid $header__navigation--BTColor;
+    margin-right: 0px;
+    order: 5;
+    width: 100%;
+    margin-top: 5px;
+
+    ul{
+      justify-content: space-around;
+    }
   }
 }

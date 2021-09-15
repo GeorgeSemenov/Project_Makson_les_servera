@@ -1,0 +1,13 @@
+.header__sandwich-button {
+  display: none;
+  @media (max-width: $xl - 1px){
+    order: 4;
+    width: 25px;
+    height: 16px;
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-top: -5px;
+  }
+}

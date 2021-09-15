@@ -1,3 +1,7 @@
 .header__logo {
   margin-right: 119px;
+  @media (max-width: $xl - 1px){
+    margin-right: 0px;
+    order: 1;
+  }
 }
