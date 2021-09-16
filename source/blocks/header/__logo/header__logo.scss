@@ -4,4 +4,7 @@
     margin-right: 0px;
     order: 1;
   }
+  @media (max-width: $md - 1px){
+    order: 1;
+  }
 }

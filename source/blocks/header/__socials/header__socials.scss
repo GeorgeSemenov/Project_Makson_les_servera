@@ -11,7 +11,11 @@
   }
 
   @media (max-width: $xl - 1px){
-    margin-right: 0px;
+    margin-right: 138px;
     order: 2;
+  }
+  @media (max-width: $md - 1px){
+    margin-right: 0px;
+    order: 5;
   }
 }

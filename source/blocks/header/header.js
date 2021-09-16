@@ -12,12 +12,15 @@ $(document).ready(function(){
   //При нажатии на кнопку сэндвича
   $(".header__sandwich-button").click(function(){
     header.toggleClass('header_expanded')
+    if ($(window).width() < 1199) {
 
-    if(header.hasClass('header_expanded') && $(window).width() < 1199){
-      header.css({'height': headerHeight})
-    }
-    else{
-      header.css({'height': headerVisiblePartlHeight});
-    }
+      if(header.hasClass('header_expanded') ){
+        header.css({'height': headerHeight})
+      }
+      else{
+        header.css({'height': headerVisiblePartlHeight});
+      }
+
+    }//Конец условия для широт меньше XL
   })
 })

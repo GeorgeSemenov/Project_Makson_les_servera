@@ -10,4 +10,7 @@
     cursor: pointer;
     margin-top: -5px;
   }
+  @media (max-width: $md - 1px){
+    order: 3;
+  }
 }
