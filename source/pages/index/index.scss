@@ -3,6 +3,7 @@
 
 /* Стили блоков */
 @import '../../blocks/header/header';
+@import '../../blocks/main-screen/main-screen';
 
 body {
   background-color: $white;
@@ -13,8 +14,6 @@ body {
 
   main{
     flex-grow: 1;
-    @media (max-width: $md - 1px){
-      padding-top: 70px
-    }
+    padding-top: 56px
   }
 }
