@@ -1,0 +1,8 @@
+include __description/main-screen__description.pug
+include __title/main-screen__title.pug
+include ../btn/btn.pug
+mixin main-screen(modifier)
+  .main-screen&attributes(attributes)
+    +main-screen__title(modifier)
+    +main-screen__description(modifier)
+    +btn(modifier)(class="main-screen__btn")

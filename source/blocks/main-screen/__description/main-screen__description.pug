@@ -1,0 +1,4 @@
+mixin main-screen__description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__description";
+  p.main-screen__description&attributes(attributes)!=modifier["description"]
