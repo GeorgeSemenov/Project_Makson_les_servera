@@ -1,0 +1,21 @@
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1271px;
+  box-sizing: border-box;
+  padding-top: 9px;
+  padding-left: 4px;
+
+  @media (max-width: $xl - 1px){
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 25px;
+    flex-wrap: wrap;
+  }
+  @media (max-width: $md - 1px){
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}

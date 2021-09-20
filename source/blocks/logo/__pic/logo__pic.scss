@@ -1,3 +1,6 @@
 .logo__pic {
   margin-right: 6px;
+  @media (max-width: $md - 1px){
+    margin-right: 2px;
+  }
 }

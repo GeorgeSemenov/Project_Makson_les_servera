@@ -1,1 +1,5 @@
-.header__social {}
+.header__social {
+  @media (max-width: $md - 1px){
+    svg{@include square(40px);}
+  }
+}

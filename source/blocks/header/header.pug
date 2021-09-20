@@ -1,3 +1,4 @@
+include __content/header__content.pug
 include __sandwich-line/header__sandwich-line.pug
 include __sandwich-button/header__sandwich-button.pug
 include __social/header__social.pug
@@ -10,9 +11,6 @@ include ../logo/logo.pug
 mixin header(modifier)
   if modifier == undefined
     - modifier = {}
-  .header&attributes(attributes)
-    +logo(modifier)(class="header__logo")
-    +header__navigation(modifier)
-    +header__socials(modifier)
-    +header__languages(modifier)
-    +header__sandwich-button(modifier)
+  header.header&attributes(attributes)
+    +header__content(modifier)
+    

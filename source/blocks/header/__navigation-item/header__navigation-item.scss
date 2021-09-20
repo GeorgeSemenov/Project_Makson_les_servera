@@ -15,4 +15,10 @@
       color: darken($header__navigation-item-active--Color,20%)
     }
   }
+  @media (max-width: $md - 1px){
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom:0px;
+    }
+  }
 }

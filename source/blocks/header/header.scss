@@ -1,3 +1,4 @@
+@import '__content/header__content';
 @import '__sandwich-line/header__sandwich-line';
 @import '__sandwich-button/header__sandwich-button';
 @import '__logo/header__logo';
@@ -15,22 +16,15 @@
   line-height: 19px;
   color: $header--Color;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1271px;
-  box-sizing: border-box;
-  padding-top: 9px;
-  padding-left: 4px;
+  justify-content: center;
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
 
   @media (max-width: $xl - 1px){
-    width: 100%;
-    padding-right: 35px;
-    padding-left: 25px;
-    flex-wrap: wrap;
-    transition: height 0.3s linear ;
     overflow: hidden;
+    transition: height 0.3s linear ;
+  }
+  @media (max-width: $md - 1px){
+    justify-content: flex-end;
   }
 }

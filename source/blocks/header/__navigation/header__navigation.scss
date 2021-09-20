@@ -12,7 +12,7 @@
     margin-right: 0px;
     order: 5;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 8px;
 
     ul{
       justify-content: space-around;
@@ -20,5 +20,10 @@
   }
   @media (max-width: $md - 1px){
     order: 4;
+    margin-bottom: 20px;
+    ul{
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
