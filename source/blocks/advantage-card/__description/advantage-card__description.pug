@@ -1,0 +1,4 @@
+mixin advantage-card__description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__description";
+  p.advantage-card__description&attributes(attributes)!=modifier.description

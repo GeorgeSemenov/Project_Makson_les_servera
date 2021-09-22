@@ -1,0 +1,9 @@
+mixin advantages-screen__cards(modifier)
+  if modifier["cards"] == undefined
+    - modifier["cards"] = [{}];
+  ul.advantages-screen__cards&attributes(attributes)
+    each card in modifier.cards
+      if card["modifier"] == undefined
+        - card["modifier"] = "";
+      li
+        +advantage-card(card)(class=card.modifier)

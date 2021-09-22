@@ -1,0 +1,9 @@
+include __cards/advantages-screen__cards.pug
+include __description/advantages-screen__description.pug
+include __title/advantages-screen__title.pug
+include ../advantage-card/advantage-card.pug
+mixin advantages-screen(modifier)
+  .advantages-screen&attributes(attributes)
+    +advantages-screen__title(modifier)
+    +advantages-screen__description(modifier)
+    +advantages-screen__cards(modifier)

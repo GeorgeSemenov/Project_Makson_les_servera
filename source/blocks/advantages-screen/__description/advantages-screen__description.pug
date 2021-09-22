@@ -1,0 +1,4 @@
+mixin advantages-screen__description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__description";
+  p.advantages-screen__description&attributes(attributes)!=modifier.description

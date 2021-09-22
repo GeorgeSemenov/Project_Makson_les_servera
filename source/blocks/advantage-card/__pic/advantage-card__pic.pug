@@ -1,0 +1,14 @@
+include ../../../img/svg/cent.pug
+include ../../../img/svg/car.pug
+include ../../../img/svg/checkboxes.pug
+mixin advantage-card__pic(modifier)
+  if modifier["picName"] == undefined
+    - modifier["picName"] = "cent";
+  case modifier.picName
+    when "cent"
+      +cent(class=("advantage-card__pic" + attributes))
+    when "car"
+      +car(class=("advantage-card__pic" + attributes))
+    when "checkboxes"
+      +checkboxes(class=("advantage-card__pic" + attributes))
+      
