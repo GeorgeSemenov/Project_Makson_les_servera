@@ -1,7 +1,8 @@
-mixin header__navigation(modifier)
+include __item/navigation__item.pug
+mixin navigation(modifier)
   if modifier["navigationItems"] == undefined
     - modifier["navigationItems"] = [{navigationItem: 'О компании'},{navigationItem: 'Продажи'},{navigationItem: 'Особенности'},{navigationItem: 'Контакты'}];
-  nav.header__navigation&attributes(attributes)
+  nav.navigation&attributes(attributes)
     ul
       each item in modifier.navigationItems
-        +header__navigation-item(item)
+        +navigation__item(item)

@@ -1,0 +1,11 @@
+.socials__social {
+  &:hover path{
+    fill: $socials__social--fill;
+  }
+  &:active path{
+    fill: darken($socials__social--fill,10%);
+  }
+  @media (max-width: $md - 1px){
+    svg{@include square(40px);}
+  }
+}

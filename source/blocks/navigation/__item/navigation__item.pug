@@ -1,7 +1,7 @@
-mixin header__navigation-item(modifier)
+mixin navigation__item(modifier)
   if modifier["navigationItem"] == undefined
     - modifier["navigationItem"] = "empty__navigationItem";
   if modifier["navigationHref"] == undefined
     - modifier["navigationHref"] = "#!";
-  li.header__navigation-item&attributes(attributes)
+  li.navigation__item&attributes(attributes)
     a(href=modifier.navigationHref)!=modifier.navigationItem

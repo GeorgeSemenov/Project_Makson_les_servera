@@ -1,6 +1,6 @@
-.header__navigation-item {
+.navigation__item {
   a{
-    color: $header__navigation-item--Color;
+    color: $navigation__item--Color;
     transition: letter-spacing 0.3s, font-weight 0.3s;
   }
   &:hover{
@@ -12,7 +12,7 @@
   }
   &:active{
     a{
-      color: darken($header__navigation-item-active--Color,20%)
+      color: darken($navigation__item-active--Color,20%)
     }
   }
   @media (max-width: $md - 1px){

@@ -2,13 +2,11 @@
 @import '__sandwich-line/header__sandwich-line';
 @import '__sandwich-button/header__sandwich-button';
 @import '__logo/header__logo';
-@import '__social/header__social';
 @import '__language/header__language';
 @import '__languages/header__languages';
-@import '__socials/header__socials';
-@import '__navigation-item/header__navigation-item';
-@import '__navigation/header__navigation';
+@import '../socials/socials';
 @import '../logo/logo';
+@import '../navigation/navigation';
 .header {
   background-color: $header--BGColor;
   font-family: 'Roboto' ,"Arial" , sans-serif;

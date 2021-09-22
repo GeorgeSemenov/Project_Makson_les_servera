@@ -4,12 +4,12 @@ include ../../../img/svg/instagram.pug
 include ../../../img/svg/facebookNew.pug
 include ../../../img/svg/VKNew.pug
 include ../../../img/svg/instagramNew.pug
-mixin header__social(modifier)
+mixin socials__social(modifier)
   if modifier["socialPic"] == undefined
     - modifier["socialPic"] = 'facebook';
   if modifier["socialHref"] == undefined
     - modifier["socialHref"] = "#!";
-  a.header__social(href=modifier.socialHref)&attributes(attributes)
+  a.socials__social(href=modifier.socialHref)&attributes(attributes)
     //- span
     //-   +facebook()
     //-   +VK()

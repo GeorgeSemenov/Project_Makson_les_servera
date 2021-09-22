@@ -1,17 +1,10 @@
+let headerVisiblePartlHeight = '59px';
+let header                   = $('.header');
+let headerFullHeight;
 $(document).ready(function(){
-  let header = $('.header')
-  let navigation = $('.header__navigation');
-  let headerVisiblePartlHeight = '51px';
-  let headerHeight;
-  //для планшетных и мобильных экранов убираем навигацию нафиг
-  if ($(window).width() < 1199){
-    headerHeight = header.css('height');
-    header.css({'height': headerVisiblePartlHeight});
-    header.siblings('main').css({'padding-top': headerVisiblePartlHeight});
-  }
-
+  initialize();
   window.addEventListener('resize', function(event) {
-    console.log("shut up");
+    initialize();
   });
 
   //При нажатии на кнопку сэндвича
@@ -20,7 +13,7 @@ $(document).ready(function(){
     if ($(window).width() < 1199) {
 
       if(header.hasClass('header_expanded') ){
-        header.css({'height': headerHeight})
+        header.css({'height': headerFullHeight})
       }
       else{
         header.css({'height': headerVisiblePartlHeight});
@@ -29,3 +22,40 @@ $(document).ready(function(){
     }//Конец условия для широт меньше XL
   })
 })
+
+function initialize(){
+  let headerContent     = $('.header__content');
+  headerFullHeight      = getFullNodeHeight(headerContent);
+
+  if ($(window).width() < 1199) {
+    if ($(window).width() < 768){headerVisiblePartlHeight = '52px';}
+    header.siblings('main').css({'padding-top': headerVisiblePartlHeight});
+    if (header.hasClass('header_expanded')){
+      header.css({'height': headerFullHeight});
+    }else{
+      header.css({'height': headerVisiblePartlHeight});
+    }
+  }else{
+    headerVisiblePartlHeight = 'auto';
+    header.siblings('main').css({'padding-top': header.css('height')});
+  }
+
+}
+function getFullNodeHeight(node){
+  let height        = parseInt(node.css('height'),10);
+  let marginTop     = parseInt(node.css('margin-top'),10);
+  let marginBottom  = parseInt(node.css('margin-bottom'),10);
+  let paddingTop    = parseInt(node.css('padding-top'),10);
+  let paddingBottom = parseInt(node.css('padding-bottom'),10);
+  let borderTop     = parseInt(node.css('border-top'),10);
+  let borderBottom  = parseInt(node.css('border-bottom'),10);
+  console.log(`height=${height}`);
+  console.log(`marginTop = ${marginTop}`);
+  console.log(`marginBottom = ${marginBottom}`);
+  console.log(`paddingTop = ${paddingTop}`);
+  console.log(`paddingBottom = ${paddingBottom}`);
+  console.log(`borderTop = ${borderTop}`);
+  console.log(`borderBottom = ${borderBottom}`);
+  return (height + marginTop + marginBottom + paddingTop + 
+    paddingBottom + borderBottom + borderTop);
+}

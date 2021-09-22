@@ -1,4 +1,5 @@
-.header__socials {
+@import '__social/socials__social';
+.socials {
   padding-top: 3px;
   margin-right: 147px;
   display: flex;
@@ -18,7 +19,7 @@
     width: 100%;
     margin-right: 0px;
     order: 5;
-    border-top: 1px solid $header__socials-md--BTColor;
+    border-top: 1px solid $socials-md--BTColor;
     @include py(15px);
     justify-content: space-around;
   }

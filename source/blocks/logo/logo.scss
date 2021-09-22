@@ -9,7 +9,8 @@
   padding-top: 8px;
   padding-right: 15px;
   padding-bottom: 4px;
+  transition: background-color 0.3s ease 0s;
 
-  &:hover{background-color: darken($logo-BGColor,20%);}
-  &:active{background-color: darken($logo-BGColor,40%);}
+  &:hover{background-color: darken($logo-BGColor,10%);}
+  &:active{background-color: darken($logo-BGColor,20%);}
 }

@@ -1,13 +1,11 @@
 include __content/header__content.pug
 include __sandwich-line/header__sandwich-line.pug
 include __sandwich-button/header__sandwich-button.pug
-include __social/header__social.pug
 include __language/header__language.pug
 include __languages/header__languages.pug
-include __socials/header__socials.pug
-include __navigation-item/header__navigation-item.pug
-include __navigation/header__navigation.pug
+include ../socials/socials.pug
 include ../logo/logo.pug
+include ../navigation/navigation.pug
 mixin header(modifier)
   if modifier == undefined
     - modifier = {}

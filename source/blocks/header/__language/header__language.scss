@@ -1,6 +1,11 @@
 .header__language {
   margin-right: 13px;
+  &:hover{
+    font-weight: 600;
+  }
   &:last-child{
     margin-right:0px;
   }
+
+
 }

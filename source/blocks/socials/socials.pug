@@ -1,7 +1,8 @@
-mixin header__socials(modifier)
+include __social/socials__social.pug
+mixin socials(modifier)
   if modifier["socialPics"] == undefined
     - modifier["socialPics"] = [{socialPic: 'VK', href:"!#"},{socialPic: 'facebook', href:"!#"},{socialPic: 'instagram', href:"!#"}];
-  ul.header__socials&attributes(attributes)
+  ul.socials&attributes(attributes)
     each item in modifier.socialPics 
       li
-        +header__social(item)
+        +socials__social(item)
