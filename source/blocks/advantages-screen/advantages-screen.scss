@@ -1,0 +1,7 @@
+@import '__cards/advantages-screen__cards';
+@import '__description/advantages-screen__description';
+@import '__title/advantages-screen__title';
+@import '../advantage-card/advantage-card';
+.advantages-screen {
+  background:$advantages-screen--BGColor;
+}

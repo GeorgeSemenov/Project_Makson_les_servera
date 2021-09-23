@@ -1,0 +1,8 @@
+include __description/advantage-card__description.pug
+include __title/advantage-card__title.pug
+include __pic/advantage-card__pic.pug
+mixin advantage-card(modifier)
+  .advantage-card&attributes(attributes)
+    +advantage-card__pic(modifier)
+    +advantage-card__title(modifier)
+    +advantage-card__description(modifier)

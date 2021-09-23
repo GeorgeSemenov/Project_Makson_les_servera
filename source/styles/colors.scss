@@ -6,7 +6,9 @@ $black: #000000;
 
 $green: #22A627;
 
+$gray-darker: #575757;//rgba(0, 0, 0, 0.66)
 $gray: #b3b3b3;
+$gray-lighter: #ECF1EC;
 
 /* variables with sense */
 /* *********************************************************************** */
@@ -30,3 +32,8 @@ $main-screen--BGColor: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0
 
 $btn--BGColor: $green;
 $btn--Color : $white;
+$advantages-screen--BGColor: $gray-lighter;
+
+$advantage-card--BGColor: $white;
+$advantage-card__title--Color: $black;
+$advantage-card__description--Color: $gray-darker;
