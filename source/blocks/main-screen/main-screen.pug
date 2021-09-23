@@ -1,8 +1,8 @@
+include __content/main-screen__content.pug
+include __arrow/main-screen__arrow.pug
 include __description/main-screen__description.pug
 include __title/main-screen__title.pug
 include ../btn/btn.pug
 mixin main-screen(modifier)
   section.main-screen&attributes(attributes)
-    +main-screen__title(modifier)
-    +main-screen__description(modifier)
-    +btn(modifier)(class="main-screen__btn")
+    +main-screen__content(modifier)

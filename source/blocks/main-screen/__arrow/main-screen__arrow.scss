@@ -1,0 +1,10 @@
+.main-screen__arrow {
+  bottom: 144px;
+  cursor: pointer;
+  @media (max-width: $xl - 1px){
+    bottom: 70px;
+  }
+  @media (max-width: $md - 1px){
+    bottom: 30px;
+  }
+}

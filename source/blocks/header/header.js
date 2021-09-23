@@ -29,7 +29,7 @@ function initialize(){
 
   if ($(window).width() < 1199) {
     if ($(window).width() < 768){headerVisiblePartlHeight = '52px';}
-    header.siblings('main').css({'padding-top': headerVisiblePartlHeight});
+    header.next().children().first().css({'padding-top': headerVisiblePartlHeight});
     if (header.hasClass('header_expanded')){
       header.css({'height': headerFullHeight});
     }else{
@@ -37,7 +37,7 @@ function initialize(){
     }
   }else{
     headerVisiblePartlHeight = 'auto';
-    header.siblings('main').css({'padding-top': header.css('height')});
+    header.next().children().first().css({'padding-top': header.css('height')});
   }
 
 }

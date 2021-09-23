@@ -1,3 +1,5 @@
+@import '__content/main-screen__content';
+@import '__arrow/main-screen__arrow';
 @import '__btn/main-screen__btn';
 @import '__description/main-screen__description';
 @import '__title/main-screen__title';
@@ -8,8 +10,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 100vh;
+  box-sizing: border-box;
   font-family: 'Roboto' ,"Arial" , sans-serif;
   @media (max-width: $md){
     background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-tablet.png);
