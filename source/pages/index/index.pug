@@ -1,6 +1,6 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/header/header.pug
-//- include ../../blocks/main-screen/main-screen.pug
+include ../../blocks/main-screen/main-screen.pug
 include ../../blocks/advantages-screen/advantages-screen.pug
 doctype html
 html(lang="ru")
@@ -13,7 +13,11 @@ html(lang="ru")
   body
     +header()
     main
-      //- +main-screen({})
+      +main-screen({
+        title: "Пиломатериал от производителя",
+        description: "Пиломатериал от производителя наивысшего качества. Компания “Лес севера” окажет услуги по доставке древесины быстро, в нужном  обьеме и в срок.",
+        buttonText: "Стать партнёром",
+      })
       +advantages-screen({
         cards:[
           {

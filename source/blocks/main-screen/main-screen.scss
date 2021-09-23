@@ -3,8 +3,14 @@
 @import '__title/main-screen__title';
 @import '../btn/btn';
 .main-screen {
+  color: $main-screen--Color;
   background: $main-screen--BGColor, url(../../img/main-screen-bg-picpng.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100vh;
+  font-family: 'Roboto' ,"Arial" , sans-serif;
   @media (max-width: $md){
     background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-tablet.png);
   }
