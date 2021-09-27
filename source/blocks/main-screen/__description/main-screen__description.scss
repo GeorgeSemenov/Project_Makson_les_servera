@@ -5,4 +5,7 @@
   width: 477px;
   text-align: center;
   letter-spacing: 0.3px;
+  @media (max-width: $md){
+    font-size: 14px;
+  }
 }

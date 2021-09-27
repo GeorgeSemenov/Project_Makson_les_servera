@@ -7,14 +7,19 @@
 .main-screen {
   color: $main-screen--Color;
   background: $main-screen--BGColor, url(../../img/main-screen-bg-picpng.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  padding-bottom: 59px;
   height: 100vh;
   box-sizing: border-box;
   font-family: 'Roboto' ,"Arial" , sans-serif;
   @media (max-width: $md){
-    background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-tablet.png);
+    background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-tablet.png) no-repeat;
+    background-size: cover;
+    padding-bottom: 0px;
   }
   @media (max-width: $xs){
     background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-mobile.png);

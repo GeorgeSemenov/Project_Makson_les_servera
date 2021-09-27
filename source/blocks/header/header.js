@@ -49,13 +49,13 @@ function getFullNodeHeight(node){
   let paddingBottom = parseInt(node.css('padding-bottom'),10);
   let borderTop     = parseInt(node.css('border-top'),10);
   let borderBottom  = parseInt(node.css('border-bottom'),10);
-  console.log(`height=${height}`);
-  console.log(`marginTop = ${marginTop}`);
-  console.log(`marginBottom = ${marginBottom}`);
-  console.log(`paddingTop = ${paddingTop}`);
-  console.log(`paddingBottom = ${paddingBottom}`);
-  console.log(`borderTop = ${borderTop}`);
-  console.log(`borderBottom = ${borderBottom}`);
+  // console.log(`height=${height}`);
+  // console.log(`marginTop = ${marginTop}`);
+  // console.log(`marginBottom = ${marginBottom}`);
+  // console.log(`paddingTop = ${paddingTop}`);
+  // console.log(`paddingBottom = ${paddingBottom}`);
+  // console.log(`borderTop = ${borderTop}`);
+  // console.log(`borderBottom = ${borderBottom}`);
   return (height + marginTop + marginBottom + paddingTop + 
     paddingBottom + borderBottom + borderTop);
 }

@@ -4,4 +4,8 @@
   font-weight: 600;
   letter-spacing: 1.6px;
   margin-bottom: 21px;
+  text-align: center;
+  @media (max-width: $md){
+    font-size: 30px;
+  }
 }

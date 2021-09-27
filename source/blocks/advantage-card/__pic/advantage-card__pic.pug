@@ -1,14 +1,16 @@
 include ../../../img/svg/cent.pug
 include ../../../img/svg/car.pug
-include ../../../img/svg/checkboxes.pug
+include ../../../img/svg/checked-box.pug
 mixin advantage-card__pic(modifier)
   if modifier["picName"] == undefined
     - modifier["picName"] = "cent";
+  if attributes.class == undefined
+    - attributes.class = '';
   case modifier.picName
     when "cent"
-      +cent(class=("advantage-card__pic" + attributes))
+      +cent(class=("advantage-card__pic " + attributes.class))
     when "car"
-      +car(class=("advantage-card__pic" + attributes))
-    when "checkboxes"
-      +checkboxes(class=("advantage-card__pic" + attributes))
+      +car(class=("advantage-card__pic " + attributes))
+    when "checkbox"
+      +checked-box(class=("advantage-card__pic " + attributes))
       

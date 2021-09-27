@@ -1,1 +1,7 @@
-.advantages-screen__cards {}
+.advantages-screen__cards {
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: $md - 1px){
+    flex-direction: column;
+  }
+}
