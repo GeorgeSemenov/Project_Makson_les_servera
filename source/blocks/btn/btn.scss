@@ -9,4 +9,7 @@
   line-height: 24px;
   color: $btn--Color;
   border-radius: 10px;
+  cursor: pointer;
+  &:hover{    background:darken($btn--BGColor,10%);  }
+  &:active{    background:darken($btn--BGColor,20%);  }
 }
