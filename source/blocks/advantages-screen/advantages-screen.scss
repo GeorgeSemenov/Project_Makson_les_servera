@@ -1,8 +1,22 @@
+@import '__card/advantages-screen__card';
 @import '__cards/advantages-screen__cards';
 @import '__description/advantages-screen__description';
 @import '__title/advantages-screen__title';
 @import '../advantage-card/advantage-card';
 .advantages-screen {
-  background:$advantages-screen--BGColor;
-  height: 100vh;
+  // background:$advantages-screen--BGColor;
+  font-family: 'Russo One' ,"Arial" , sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include px(25px);
+  @include py(87px);
+  text-align: center;
+  @media (max-width: $md){
+    @include py(77px);
+    @include px(15px);
+  }
+  @media (max-width: $sm){
+    @include py(54px);
+  }
 }

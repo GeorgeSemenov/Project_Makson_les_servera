@@ -6,4 +6,4 @@ mixin advantages-screen__cards(modifier)
       if card["modifier"] == undefined
         - card["modifier"] = "";
       li
-        +advantage-card(card)(class=card.modifier)
+        +advantage-card(card)(class=("advantages-screen__card "+card.modifier))

@@ -1,1 +1,13 @@
-.advantages-screen__description {}
+.advantages-screen__description {
+  font-size: 15px;
+  line-height: 18px;
+  color: $advantages-screen__description--Color;
+  margin-bottom: 61px;
+  @media (max-width: $md){
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  @media (max-width: $sm){
+    margin-bottom: 36px;
+  }
+}

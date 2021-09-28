@@ -3,4 +3,10 @@
   line-height: 21px;
   color: $advantage-card__title--Color;
   margin-bottom: 16px;
+  @media (max-width: 800px){
+    font-size: 14px;
+  }
+  @media (max-width: $md - 1px){
+    font-size: 18px;
+  }
 }
