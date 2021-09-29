@@ -1,3 +1,8 @@
-.main-screen__btn {
-  margin-bottom: 28vh;
+.main-screen{
+  .main-screen__btn{
+    @media (max-width: $sm - 1px){
+      font-size: 16px;
+      @include py(11px);
+    }
+  }
 }

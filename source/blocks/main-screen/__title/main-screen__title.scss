@@ -7,5 +7,11 @@
   text-align: center;
   @media (max-width: $md){
     font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+  @media (max-width: $sm - 1px){
+    line-height: 39px;
+    margin-bottom: 18px;
   }
 }

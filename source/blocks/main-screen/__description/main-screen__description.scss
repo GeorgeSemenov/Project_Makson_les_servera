@@ -7,5 +7,11 @@
   letter-spacing: 0.3px;
   @media (max-width: $md){
     font-size: 14px;
+    margin-bottom: 41px;
+    max-width: 483px;
+  }
+  @media (max-width: $sm - 1px){
+    max-width: 285px;
+    margin-bottom: 21px;
   }
 }
