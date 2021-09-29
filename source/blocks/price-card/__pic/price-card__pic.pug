@@ -1,0 +1,14 @@
+mixin price-card__pic(modifier)
+  if modifier["picName"] == undefined
+    - modifier["picName"] = "brus1";
+  case modifier.picName
+    when "brus1"
+      img(src=require('../../img/brus1.png') alt="тут должен быть брус").price-card__pic&attributes(attributes)
+    when "brus2"
+      img(src=require('../../img/brus2.png') alt="тут должен быть брус").price-card__pic&attributes(attributes)
+    when "brus3"
+      img(src=require('../../img/brus3.png') alt="тут должен быть брус").price-card__pic&attributes(attributes)
+    when "brus4"
+      img(src=require('../../img/brus4.png') alt="тут должен быть брус").price-card__pic&attributes(attributes)
+      
+  

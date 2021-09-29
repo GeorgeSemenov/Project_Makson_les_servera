@@ -1,0 +1,14 @@
+include __description/price-card__description.pug
+include __title/price-card__title.pug
+include __pic/price-card__pic.pug
+include __price/price-card__price.pug
+include ../btn/btn.pug
+mixin price-card(modifier)
+  if modifier["buttonText"] == undefined
+    - modifier["buttonText"] = "Заказать сейчас";
+  .price-card&attributes(attributes)
+    +price-card__price(modifier)
+    +price-card__pic(modifier)
+    +price-card__title(modifier)
+    +price-card__description(modifier)
+    +btn(modifier)(class="price-card__btn")

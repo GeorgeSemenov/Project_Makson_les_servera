@@ -1,0 +1,11 @@
+@import '__btn/price-card__btn';
+@import '__description/price-card__description';
+@import '__title/price-card__title';
+@import '__pic/price-card__pic';
+@import '__price/price-card__price';
+@import '../btn/btn';
+.price-card {
+  font-family: 'Roboto' ,"Arial" , sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}

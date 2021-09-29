@@ -1,0 +1,4 @@
+mixin prices-screen__title(modifier)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h2.prices-screen__title&attributes(attributes)!=modifier.title

@@ -1,0 +1,4 @@
+mixin price-card__title(modifier)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h3.price-card__title&attributes(attributes)!=modifier.title

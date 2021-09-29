@@ -1,0 +1,4 @@
+mixin price-card__description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__description";
+  p.price-card__description&attributes(attributes)!=modifier.description

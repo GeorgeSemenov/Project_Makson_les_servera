@@ -1,0 +1,7 @@
+include __slider/prices-screen__slider.pug
+include __title/prices-screen__title.pug
+include ../price-card/price-card.pug
+mixin prices-screen(modifier)
+  .prices-screen&attributes(attributes)
+    +prices-screen__title(modifier)
+    +prices-screen__slider(modifier)
