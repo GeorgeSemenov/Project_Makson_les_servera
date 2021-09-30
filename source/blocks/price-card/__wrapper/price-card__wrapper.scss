@@ -1,0 +1,7 @@
+.price-card__wrapper {
+  @include px(30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}

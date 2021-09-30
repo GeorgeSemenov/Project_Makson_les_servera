@@ -1,6 +1,10 @@
+@import '__slider-arrow/prices-screen__slider-arrow';
+@import '__slide/prices-screen__slide';
 @import '__slider/prices-screen__slider';
 @import '__title/prices-screen__title';
 @import '../price-card/price-card';
+@import '../../vendor/swiperJS/swiper-bundle';
+
 .prices-screen {
   padding-top: 100px;
   padding-left: 100px;

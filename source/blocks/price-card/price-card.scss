@@ -1,3 +1,4 @@
+@import '__wrapper/price-card__wrapper';
 @import '__btn/price-card__btn';
 @import '__description/price-card__description';
 @import '__title/price-card__title';
@@ -14,8 +15,10 @@
   border-radius: 10px;
   box-sizing: border-box;
   padding-top: 30px;
-  @include px(30px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: $lg - 1px) and (min-width: $md){
+    width: 330px;
+  }
 }
