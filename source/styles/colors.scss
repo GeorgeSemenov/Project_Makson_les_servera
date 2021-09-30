@@ -1,8 +1,12 @@
 /* no sense variables */
 $inherit: inherit;
 $transparent: transparent;
+
 $white: #ffffff;
+$white-darker: rgba(196, 196, 196, 0.01);
+
 $black: #000000;
+$black-lighter: rgba(0, 0, 0, 0.12);
 
 $green: #22A627;
 
@@ -41,3 +45,6 @@ $advantage-card__title--Color: $black;
 $advantage-card__description--Color: $gray-darker;
 
 $advantages-screen__description--Color: $gray-dark;
+
+$price-card--ShadowColor: $black-lighter;
+$price-card--BGColor: $white-darker;

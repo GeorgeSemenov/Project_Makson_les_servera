@@ -1,4 +1,4 @@
 mixin btn(modifier)
   if modifier["buttonText"] == undefined
     - modifier["buttonText"] = "empty__buttonText";
-  .btn&attributes(attributes)!=modifier.buttonText
+  button.btn&attributes(attributes)!=modifier.buttonText

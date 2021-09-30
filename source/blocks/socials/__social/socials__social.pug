@@ -10,11 +10,6 @@ mixin socials__social(modifier)
   if modifier["socialHref"] == undefined
     - modifier["socialHref"] = "#!";
   a.socials__social(href=modifier.socialHref)&attributes(attributes)
-    span
-      +facebook()
-      +VK()
-      +instagram()
-
     case modifier.socialPic
       when "facebook"
         +facebookNew()
