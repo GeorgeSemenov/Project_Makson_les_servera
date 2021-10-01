@@ -4,6 +4,9 @@ $(document).ready(function(){
     loop: true,
     // slidesPerView: 4,
     spaceBetween: 39,
+     autoplay: {
+       delay: 2500,
+     },
 
     // If we need pagination
     // pagination: {
@@ -31,10 +34,10 @@ $(document).ready(function(){
         slidesPerView: 2,
       },
       // when window width is >= 991px
-      991: {
+      1199: {
         slidesPerView: 3,
       },
-      1199: {
+      1500: {
         slidesPerView: 4,
       },
     }

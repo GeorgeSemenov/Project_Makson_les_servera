@@ -6,6 +6,7 @@ $white: #ffffff;
 $white-darker: rgba(196, 196, 196, 0.01);
 
 $black: #000000;
+$black-light: rgba(0, 0, 0, 0.4);
 $black-lighter: rgba(0, 0, 0, 0.12);
 
 $green: #22A627;
@@ -48,3 +49,4 @@ $advantages-screen__description--Color: $gray-dark;
 
 $price-card--ShadowColor: $black-lighter;
 $price-card--BGColor: $white-darker;
+$price-card__description--Color: $black-light;
