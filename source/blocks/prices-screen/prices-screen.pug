@@ -1,9 +1,9 @@
+include __content/prices-screen__content.pug
 include __slider-arrow/prices-screen__slider-arrow.pug
 include __slider/prices-screen__slider.pug
 include __title/prices-screen__title.pug
 include ../price-card/price-card.pug
 mixin prices-screen(modifier)
   .prices-screen&attributes(attributes)
-    +prices-screen__title(modifier)
-    +prices-screen__slider(modifier)
+    +prices-screen__content(modifier)(class="content")
     

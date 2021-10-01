@@ -1,10 +1,9 @@
 mixin prices-screen__slider(modifier)
   if modifier["cards"] == undefined
     - modifier["cards"] = [{}];
-  .prices-screen__slider&attributes(attributes)
-    .swiper
-      .swiper-wrapper
-        each card in modifier.cards
-          +price-card(card)(class="prices-screen__slide swiper-slide ")
-      +prices-screen__slider-arrow(modifier)(class="prices-screen__slider-arrow_right swiper-button-prev ")
-      +prices-screen__slider-arrow(modifier)(class="prices-screen__slider-arrow_left swiper-button-next ")
+  .prices-screen__slider&attributes(attributes)(class="swiper")
+    .swiper-wrapper
+      each card in modifier.cards
+        +price-card(card)(class="prices-screen__slide swiper-slide ")
+    +prices-screen__slider-arrow(modifier)(class="prices-screen__slider-arrow_right swiper-button-prev ")
+    +prices-screen__slider-arrow(modifier)(class="prices-screen__slider-arrow_left swiper-button-next ")
