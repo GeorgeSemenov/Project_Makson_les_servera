@@ -1,0 +1,8 @@
+.prices-screen{
+  div.prices-screen__slider-pagination {
+    bottom: -34px;
+    @media (min-width: $xxl){
+      display: none;
+    }
+  }
+}

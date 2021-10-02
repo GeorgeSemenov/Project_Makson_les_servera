@@ -2,10 +2,11 @@
 @import "../../styles/allCommonStyles";
 
 /* Стили блоков */
-// @import '../../blocks/header/header';
-// @import '../../blocks/main-screen/main-screen';
-// @import '../../blocks/advantages-screen/advantages-screen';
+@import '../../blocks/header/header';
+@import '../../blocks/main-screen/main-screen';
+@import '../../blocks/advantages-screen/advantages-screen';
 @import '../../blocks/prices-screen/prices-screen';
+@import '../../blocks/about-us-screen/about-us-screen';
 
 body {
   background-color: $white;
@@ -20,5 +21,8 @@ body {
   .content{
     max-width: 1280px;
     @include mx(auto);
+    @media (max-width: $lg - 1px){
+      @include px(20px);
+    }
   }
 }

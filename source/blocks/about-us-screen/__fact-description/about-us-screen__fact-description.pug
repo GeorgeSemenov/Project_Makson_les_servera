@@ -1,0 +1,4 @@
+mixin about-us-screen__fact-description(modifier)
+  if modifier["factDescription"] == undefined
+    - modifier["factDescription"] = "empty__factDescription";
+  p.about-us-screen__fact-description&attributes(attributes)!=modifier.factDescription

@@ -1,5 +1,8 @@
 let headerVisiblePartlHeight = '59px';
 let header                   = $('.header');
+let logo                     = $('.header__logo');
+let navigation               = $('.header__navigation');
+let socials                  = $('.header__socials');
 let headerFullHeight;
 $(document).ready(function(){
   initialize();
@@ -24,31 +27,46 @@ $(document).ready(function(){
 })
 
 function initialize(){
-  let headerContent     = $('.header__content');
-  headerFullHeight      = getFullNodeHeight(headerContent);
+  let headerContent            = $('.header__content');
+  let contentPaddingBottom     = parseInt(headerContent.css('padding-bottom'),10);
 
   if ($(window).width() < 1199) {
-    if ($(window).width() < 768){headerVisiblePartlHeight = '52px';}
-    header.next().children().first().css({'padding-top': headerVisiblePartlHeight});
-    if (header.hasClass('header_expanded')){
-      header.css({'height': headerFullHeight});
-    }else{
-      header.css({'height': headerVisiblePartlHeight});
+    let contentPaddingTop        = parseInt(headerContent.css('padding-top'),10);
+    headerFullHeight         = getFullNodeHeight([logo,navigation]) 
+                               + contentPaddingTop;
+    headerVisiblePartlHeight = '59px';
+    if ($(window).width() < 768){
+      let contentPaddingTop        = parseInt(headerContent.css('padding-top'),10);
+      headerVisiblePartlHeight = '52px';
+      headerFullHeight         = getFullNodeHeight([logo,navigation,socials]);
     }
+    header.next().children().first().css({'padding-top': headerVisiblePartlHeight});
   }else{
+    let contentPaddingTop        = parseInt(headerContent.css('padding-top'),10);
+    headerFullHeight         = getFullNodeHeight([logo]) 
+                               + contentPaddingTop
+                               + contentPaddingBottom;
     headerVisiblePartlHeight = 'auto';
     header.next().children().first().css({'padding-top': header.css('height')});
   }
-
+  if (header.hasClass('header_expanded')){header.css({'height': headerFullHeight});}
+  else{header.css({'height': headerVisiblePartlHeight});}
 }
-function getFullNodeHeight(node){
-  let height        = parseInt(node.css('height'),10);
-  let marginTop     = parseInt(node.css('margin-top'),10);
-  let marginBottom  = parseInt(node.css('margin-bottom'),10);
-  let paddingTop    = parseInt(node.css('padding-top'),10);
-  let paddingBottom = parseInt(node.css('padding-bottom'),10);
-  let borderTop     = parseInt(node.css('border-top'),10);
-  let borderBottom  = parseInt(node.css('border-bottom'),10);
+
+function getFullNodeHeight(nodeArr){
+  let totalSum=0;
+  nodeArr.forEach(function(node,i,arr){
+    let height        = parseInt(node.css('height'),10);
+    let marginTop     = parseInt(node.css('margin-top'),10);
+    let marginBottom  = parseInt(node.css('margin-bottom'),10);
+    let paddingTop    = parseInt(node.css('padding-top'),10);
+    let paddingBottom = parseInt(node.css('padding-bottom'),10);
+    let borderTop     = parseInt(node.css('border-top'),10);
+    let borderBottom  = parseInt(node.css('border-bottom'),10);
+    let sum           = (height + marginTop + marginBottom + paddingTop + 
+                         paddingBottom + borderBottom + borderTop);
+    totalSum += sum;
+  })
   // console.log(`height=${height}`);
   // console.log(`marginTop = ${marginTop}`);
   // console.log(`marginBottom = ${marginBottom}`);
@@ -56,6 +74,7 @@ function getFullNodeHeight(node){
   // console.log(`paddingBottom = ${paddingBottom}`);
   // console.log(`borderTop = ${borderTop}`);
   // console.log(`borderBottom = ${borderBottom}`);
-  return (height + marginTop + marginBottom + paddingTop + 
-    paddingBottom + borderBottom + borderTop);
+  return totalSum;
+  // return (height + marginTop + marginBottom + paddingTop + 
+  //   paddingBottom + borderBottom + borderTop);
 }

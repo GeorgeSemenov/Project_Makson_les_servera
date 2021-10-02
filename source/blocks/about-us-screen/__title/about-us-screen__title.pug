@@ -1,0 +1,4 @@
+mixin about-us-screen__title(modifier)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h2.about-us-screen__title&attributes(attributes)!=modifier.title

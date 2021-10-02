@@ -1,0 +1,4 @@
+mixin about-us-screen__block-head(modifier)
+  if modifier["blockHead"] == undefined
+    - modifier["blockHead"] = "empty__blockHead";
+  .about-us-screen__block-head&attributes(attributes)!=modifier.blockHead

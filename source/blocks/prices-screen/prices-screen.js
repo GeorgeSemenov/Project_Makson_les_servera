@@ -8,10 +8,9 @@ $(document).ready(function(){
        delay: 2500,
      },
 
-    // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
     // Navigation arrows
     navigation: {
@@ -20,9 +19,9 @@ $(document).ready(function(){
     },
 
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
 
     breakpoints: {
       // when window width is >= 320px

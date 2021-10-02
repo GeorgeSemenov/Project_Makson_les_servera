@@ -1,0 +1,15 @@
+include __video/about-us-screen__video.pug
+include __fact-description/about-us-screen__fact-description.pug
+include __fact-head/about-us-screen__fact-head.pug
+include __fact/about-us-screen__fact.pug
+include __facts/about-us-screen__facts.pug
+include __text/about-us-screen__text.pug
+include __block-head/about-us-screen__block-head.pug
+include __text-container/about-us-screen__text-container.pug
+include __title/about-us-screen__title.pug
+include __content/about-us-screen__content.pug
+include ../btn/btn.pug
+mixin about-us-screen(modifier)
+  section.about-us-screen&attributes(attributes)
+    +about-us-screen__title(modifier)
+    +about-us-screen__content(modifier)

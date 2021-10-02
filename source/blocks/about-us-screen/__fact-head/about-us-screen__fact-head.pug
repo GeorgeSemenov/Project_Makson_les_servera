@@ -1,0 +1,4 @@
+mixin about-us-screen__fact-head(modifier)
+  if modifier["factHead"] == undefined
+    - modifier["factHead"] = "empty__factHead";
+  h4.about-us-screen__fact-head&attributes(attributes)!=modifier.factHead

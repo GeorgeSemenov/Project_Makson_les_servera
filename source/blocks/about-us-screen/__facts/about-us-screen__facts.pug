@@ -1,0 +1,6 @@
+mixin about-us-screen__facts(modifier)
+  if modifier["facts"] == undefined
+    - modifier["facts"] = [{}];
+  ul.about-us-screen__facts&attributes(attributes)
+    each fact in modifier.facts
+      +about-us-screen__fact(fact)(class=fact.modifier)

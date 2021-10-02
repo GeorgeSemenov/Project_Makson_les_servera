@@ -1,0 +1,7 @@
+mixin about-us-screen__text-container(modifier)
+  .about-us-screen__text-container&attributes(attributes)
+    +about-us-screen__block-head(Object.assign({},{"blockHead":modifier["blockHead1"] }))
+    +about-us-screen__text(modifier)
+    +about-us-screen__block-head(Object.assign({},{"blockHead":modifier["blockHead2"] }))(class="about-us-screen__block-head_additional-margin")
+    +about-us-screen__facts(modifier)
+    +btn(modifier)(class="about-us-screen__btn")

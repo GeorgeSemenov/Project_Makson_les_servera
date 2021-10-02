@@ -1,3 +1,4 @@
+@import '__slider-pagination/prices-screen__slider-pagination';
 @import '__content/prices-screen__content';
 @import '__slider-arrow/prices-screen__slider-arrow';
 @import '__slide/prices-screen__slide';
@@ -7,4 +8,9 @@
 @import '../../vendor/swiperJS/swiper-bundle';
 
 .prices-screen {
+  font-family: 'Russo One' ,"Arial" , sans-serif;
+  @include px(20px);
+  @media (max-width: $md - 1px){
+    @include px(15px);
+  }
 }

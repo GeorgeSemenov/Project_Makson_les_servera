@@ -9,7 +9,7 @@
     justify-content: space-between;
   }
   @media (max-width: $xl - 1px){
-    padding-bottom: 7px;
+    @include py(10px);
     border-top: 1px solid $navigation--BTColor;
     margin-right: 0px;
     order: 5;

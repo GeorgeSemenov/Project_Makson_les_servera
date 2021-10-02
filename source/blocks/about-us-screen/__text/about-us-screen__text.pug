@@ -1,0 +1,4 @@
+mixin about-us-screen__text(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  .about-us-screen__text&attributes(attributes)!=modifier.text
