@@ -2,5 +2,18 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
+  margin-bottom: 23px;
+  letter-spacing: -0.3px;
 
+  @media (max-width: $sm - 1px){
+    margin-bottom: 18px;
+    line-height: 28px;
+  }
+
+  &_additional-margin{
+    margin-bottom: 31px;
+    @media (max-width: $sm - 1px){
+      margin-bottom: 18px;
+    }
+  }
 }

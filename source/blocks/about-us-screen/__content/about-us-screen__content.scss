@@ -1,1 +1,8 @@
-.about-us-screen__content {}
+div.about-us-screen__content {
+  display: flex;
+  @media (max-width: $xxl - 1px){
+    flex-direction: column;
+    max-width: 688px;
+    margin-bottom: 57px;
+  }
+}

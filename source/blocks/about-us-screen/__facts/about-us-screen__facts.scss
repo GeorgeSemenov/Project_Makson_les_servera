@@ -1,1 +1,12 @@
-.about-us-screen__facts {}
+.about-us-screen__facts {
+  display: flex;
+  margin-bottom: 65px;
+  justify-content: space-between;
+  padding-right: 40px;
+
+  @media (max-width: $sm - 1px){
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+}
+

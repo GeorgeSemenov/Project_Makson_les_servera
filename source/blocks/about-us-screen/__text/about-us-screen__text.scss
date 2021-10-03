@@ -1,4 +1,13 @@
 .about-us-screen__text {
   font-size: 16px;
   line-height: 25px;
+  margin-bottom: 42px;
+  letter-spacing: 0.3px;
+  @media (max-width: $lg - 1px){
+    margin-bottom: 53px;
+  }
+  @media (max-width: $sm - 1px){
+    font-size: 14px;
+    margin-bottom: 21px;
+  }
 }
