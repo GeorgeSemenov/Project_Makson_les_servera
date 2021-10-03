@@ -11,7 +11,7 @@ module.exports = function(){
 						}
 				},
 				{
-					test:/\.(pdf)$/,
+					test:/\.(pdf|mp4)$/,
 					loader:'file-loader',
 					options:{
 						publicPath: './files/',
