@@ -1,1 +1,8 @@
-.about-us-screen__text-container {}
+.about-us-screen__text-container {
+  @media (max-width: $xxl - 1px){
+    margin-bottom: 57px;
+  }
+  @media (max-width: $sm - 1px){
+    margin-bottom: 34px;
+  }
+}

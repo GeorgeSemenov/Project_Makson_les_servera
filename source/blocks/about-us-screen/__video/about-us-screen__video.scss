@@ -2,4 +2,8 @@
   width: 50%;
   flex-shrink: 0;
   flex-grow: 0;
+  border-radius: 10px;
+  @media (max-width: $xxl - 1px){
+    width: 100%;
+  }
 }
