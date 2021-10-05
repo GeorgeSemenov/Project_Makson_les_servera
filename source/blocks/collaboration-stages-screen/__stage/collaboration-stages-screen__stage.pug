@@ -1,0 +1,5 @@
+mixin collaboration-stages-screen__stage(modifier)
+  if modifier["stageText"] == undefined
+    - modifier["stageText"] = "empty__stageText";
+  li.collaboration-stages-screen__stage&attributes(attributes)
+    p!=modifier.stageText

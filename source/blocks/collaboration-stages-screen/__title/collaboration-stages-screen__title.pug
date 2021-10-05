@@ -1,0 +1,4 @@
+mixin collaboration-stages-screen__title(modifier)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h2.collaboration-stages-screen__title&attributes(attributes)!=modifier.title

@@ -1,0 +1,8 @@
+mixin collaboration-stages-screen__stages(modifier)
+  if modifier["stages"] == undefined
+    - modifier["stages"] = [{}];
+  ol.collaboration-stages-screen__stages&attributes(attributes)
+    each stage in modifier.stages
+      if stage["modifier"] == undefined
+        - stage["modifier"] = "";
+      +collaboration-stages-screen__stage(stage)(class=stage.modifier)

@@ -1,0 +1,18 @@
+.collaboration-stages-screen__description {
+  font-family: 'Roboto' ,"Arial" , sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $collaboration-stages-screen__description--Color;
+  max-width: 680px;
+  margin-bottom: 62px;
+  @media (max-width: $md){
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    max-width: 630px;
+  }
+  @media (max-width: $sm - 1px){
+    display: none;
+  }
+}

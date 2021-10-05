@@ -1,0 +1,4 @@
+mixin cooperation-screen__description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__descripiton";
+  p.cooperation-screen__description&attributes(attributes)!=modifier.description

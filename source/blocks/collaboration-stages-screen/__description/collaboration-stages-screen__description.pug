@@ -1,0 +1,4 @@
+mixin collaboration-stages-screen__description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "empty__description";
+  p.collaboration-stages-screen__description&attributes(attributes)!=modifier.description

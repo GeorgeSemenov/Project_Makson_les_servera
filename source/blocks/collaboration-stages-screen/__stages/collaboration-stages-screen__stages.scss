@@ -1,0 +1,14 @@
+.collaboration-stages-screen__stages {
+  counter-reset: li;
+  display: flex;
+  width: 1287px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width: $xl - 1px){
+    width: 689px;
+  }
+  @media (max-width: $md - 1px){
+    width: 320px;
+    justify-content: center;
+  }
+}

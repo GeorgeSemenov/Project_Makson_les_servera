@@ -1,0 +1,8 @@
+include __description/cooperation-screen__description.pug
+include __title/cooperation-screen__title.pug
+include ../btn/btn.pug
+mixin cooperation-screen(modifier)
+  section.cooperation-screen&attributes(attributes)
+    +cooperation-screen__title(modifier)
+    +cooperation-screen__description(modifier)
+    +btn(modifier)(class="cooperation-screen__btn ")

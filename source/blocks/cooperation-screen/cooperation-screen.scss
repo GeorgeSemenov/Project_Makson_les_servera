@@ -1,0 +1,21 @@
+@import '__btn/cooperation-screen__btn';
+@import '__description/cooperation-screen__description';
+@import '__title/cooperation-screen__title';
+@import '../btn/btn';
+.cooperation-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $cooperation-screen--BGColor, url(../../img/shinyForestBackground-min.png), center ;
+  padding-top: 111px;
+  padding-bottom: 100px;
+  @media (max-width: $md){
+    padding-top: 102px;
+    background: $cooperation-screen--BGColor, url(../../img/shinyForestBackgroundLaptop-min.png), center ;
+  }
+  @media (max-width: $sm - 1px){
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background: $cooperation-screen--BGColor, url(../../img/shinyForestBackgroundMobile-min.png), center ;
+  }
+}

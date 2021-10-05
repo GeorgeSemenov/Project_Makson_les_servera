@@ -1,0 +1,9 @@
+include __stage/collaboration-stages-screen__stage.pug
+include __stages/collaboration-stages-screen__stages.pug
+include __description/collaboration-stages-screen__description.pug
+include __title/collaboration-stages-screen__title.pug
+mixin collaboration-stages-screen(modifier)
+  screen.collaboration-stages-screen&attributes(attributes)
+    +collaboration-stages-screen__title(modifier)
+    +collaboration-stages-screen__description(modifier)
+    +collaboration-stages-screen__stages(modifier)()
