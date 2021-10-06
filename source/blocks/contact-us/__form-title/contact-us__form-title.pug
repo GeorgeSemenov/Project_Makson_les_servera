@@ -1,3 +1,4 @@
 mixin contact-us__form-title(modifier)
-
-  h3.contact-us__form-title&attributes(attributes)
+  if modifier["formTitle"] == undefined
+    - modifier["formTitle"] = "empty__formTitle";
+  h3.contact-us__form-title&attributes(attributes)!=modifier.formTitle

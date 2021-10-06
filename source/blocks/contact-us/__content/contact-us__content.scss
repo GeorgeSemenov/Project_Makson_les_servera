@@ -1,1 +1,11 @@
-.contact-us__content {}
+.contact-us__content {
+  width: 1280px;
+  display: grid;
+  grid-template-columns : 1fr 1fr;
+  @media (max-width: $xl - 1px){
+    width: 100%;
+  }
+  @media (max-width: $lg - 1px){
+    grid-template-columns: 1fr;
+  }
+}

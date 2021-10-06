@@ -5,7 +5,11 @@
 @import '__form-title/contact-us__form-title';
 @import '__form/contact-us__form';
 @import '__content/contact-us__content';
-@import '__description/contact-us__description';
 @import '__title/contact-us__title';
 @import '../btn/btn';
-.contact-us {}
+.contact-us {
+  font-family: 'Roboto' ,"Arial" , sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

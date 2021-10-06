@@ -7,7 +7,8 @@ $white-darker: rgba(196, 196, 196, 0.01);
 
 $black: #000000;
 $black-light: rgba(0, 0, 0, 0.4);
-$black-lighter: rgba(0, 0, 0, 0.12);
+$black-lighter: rgba(0, 0, 0, 0.3);
+$black-lightest: rgba(0, 0, 0, 0.12);
 
 $green: #22A627;
 
@@ -47,7 +48,7 @@ $advantage-card__description--Color: $gray-darker;
 
 $advantages-screen__description--Color: $gray-dark;
 
-$price-card--ShadowColor: $black-lighter;
+$price-card--ShadowColor: $black-lightest;
 $price-card--BGColor: $white-darker;
 $price-card__description--Color: $black-light;
 
@@ -59,4 +60,11 @@ $collaboration-stages-screen__title--Color: $black;
 $collaboration-stages-screen__description--Color: $black;
 $collaboration-stages-screen__stage--Color: $black;
 $collaboration-stages-screen__stage-before--Color: $collaboration-stages-screen__stage--Color;
-$collaboration-stages-screen__stage--Shadow: $black-lighter;
+$collaboration-stages-screen__stage--Shadow: $black-lightest;
+
+$contact-us__title--Color: $black;
+$contact-us__input-placeholder--Color: $black-lighter;
+$contact-us__text-area-placeholder--Color: $contact-us__input-placeholder--Color;
+$contact-us__input--BorderColor: $gray-dark;
+$contact-us__text-area--BorderColor: $contact-us__input--BorderColor;
+$contact-us__form--Shadow : $black-lightest;

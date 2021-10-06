@@ -1,2 +1,4 @@
 mixin contact-us__input(modifier)
-  .contact-us__input&attributes(attributes)
+  if modifier["placeholder"] == undefined
+    - modifier["placeholder"] = "empty__placeholder";
+  input.contact-us__input(placeholder!=modifier.placeholder)&attributes(attributes)

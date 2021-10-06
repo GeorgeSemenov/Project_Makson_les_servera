@@ -1,2 +1,4 @@
 mixin contact-us__text-area(modifier)
-  .contact-us__text-area&attributes(attributes)
+  if modifier["placeholder"] == undefined
+    - modifier["placeholder"] = "empty__placeholder";
+  textarea.contact-us__text-area(placeholder!=modifier.placeholder)&attributes(attributes)

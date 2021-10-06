@@ -1,1 +1,14 @@
-.contact-us__input {}
+.contact-us__input {
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid $contact-us__input--BorderColor;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 21px;
+  &::placeholder {
+    color: $contact-us__input-placeholder--Color;
+  }
+  @media (max-width: $md - 1px){
+  }
+}
