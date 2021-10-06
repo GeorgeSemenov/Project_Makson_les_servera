@@ -1,3 +1,11 @@
 .contact-us__pic {
+  border-radius: 10px;
+  padding-left: 17px;
+  img{
+    border-radius: 10px;
+  }
 
+  @media (max-width: $sm - 1px){
+    padding-left: 17px;
+  }
 }

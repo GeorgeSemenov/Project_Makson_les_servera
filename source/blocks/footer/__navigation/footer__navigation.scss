@@ -1,0 +1,13 @@
+.footer__navigation {
+  color: $footer__navigation--Color;
+  .navigation__item{
+    a{
+      color: $inherit;
+    }
+    &:active{
+      a{
+        color: darken($footer__navigation--Color,20%)
+      }
+    }
+  }
+}

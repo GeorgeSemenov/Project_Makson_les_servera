@@ -1,0 +1,4 @@
+include ../../img/svg/youtube.pug
+mixin icon(modifier)
+  if ( !(attributes.class.indexOf('_youtube')==-1) ) 
+    +youtube(modifier)(class= "icon " + attributes.class)

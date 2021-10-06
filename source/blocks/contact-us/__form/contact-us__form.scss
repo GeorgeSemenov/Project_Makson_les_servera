@@ -7,7 +7,22 @@
   @include px(92px);
   margin-right: 20px;
   padding-top: 72px;
+  @media (max-width: $xl - 1px){
+    width: 686px;
+    @include px(124px);
+    box-sizing: border-box;
+    padding-bottom: 90px;
+    margin-bottom: 59px;
+  }
   @media (max-width: $lg - 1px){
     margin-right: 0px;
+    width: 300px;
+    padding-top: 18px;
+    @include px(26px);
+  }
+  @media (max-width: $sm - 1px){
+    box-shadow: none;
+    padding-bottom: 0px;
+    margin-bottom: 29px;
   }
 }

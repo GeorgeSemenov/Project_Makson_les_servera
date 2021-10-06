@@ -1,0 +1,4 @@
+mixin footer__sign(modifier)
+  if modifier["sign"] == undefined
+    - modifier["sign"] = "empty__sign";
+  p.footer__sign&attributes(attributes)!=modifier.sign

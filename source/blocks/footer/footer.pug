@@ -1,0 +1,11 @@
+include __content/footer__content.pug
+include __sign/footer__sign.pug
+include ../navigation/navigation.pug
+include ../icon/icon.pug
+include ../logo/logo.pug
+include ../socials/socials.pug
+mixin footer(modifier)
+  if modifier["iconName"] == undefined
+    - modifier["iconName"] = "youtube";
+  footer.footer&attributes(attributes)
+    +footer__content(modifier)(class="content")

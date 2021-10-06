@@ -4,6 +4,7 @@ $transparent: transparent;
 
 $white: #ffffff;
 $white-darker: rgba(196, 196, 196, 0.01);
+$white-dark: rgba(255, 255, 255, 0.5);
 
 $black: #000000;
 $black-light: rgba(0, 0, 0, 0.4);
@@ -68,3 +69,9 @@ $contact-us__text-area-placeholder--Color: $contact-us__input-placeholder--Color
 $contact-us__input--BorderColor: $gray-dark;
 $contact-us__text-area--BorderColor: $contact-us__input--BorderColor;
 $contact-us__form--Shadow : $black-lightest;
+
+$footer--BGColor: $black;
+$footer__navigation--Color: $white;
+
+$icon_youtube--fill: $white;
+$footer__sign--Color: $white-dark;

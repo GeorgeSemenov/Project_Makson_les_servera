@@ -1,3 +1,9 @@
 mixin contact-us__pic(modifier)
   picture.contact-us__pic&attributes(attributes)
-  
+    source(type='image/png' srcset=require('../../img/contact-us-min.png') media="(min-width: 1199px)")
+    source(type='image/png' srcset=require('../../img/contact-us-laptop-min.png') media="(min-width: 760px)")
+    source(type='image/png' srcset=require('../../img/contact-us-mobile-min.png') media="(min-width: 320px)")
+    img(src=require('../../img/contact-us-mobile-min.png') alt="Человек держит телефон")
+    
+
+    

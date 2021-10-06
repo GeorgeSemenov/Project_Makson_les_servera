@@ -1,0 +1,14 @@
+@import '__content/footer__content';
+@import '../navigation/navigation';
+@import '../icon/icon';
+@import '../logo/logo';
+@import '../socials/socials';
+@import '__sign/footer__sign';
+@import '__socials/footer__socials';
+@import '__navigation/footer__navigation';
+@import '__icon/footer__icon';
+@import '__logo/footer__logo';
+.footer {
+  background-color: $footer--BGColor;
+  @include py(78px);
+}

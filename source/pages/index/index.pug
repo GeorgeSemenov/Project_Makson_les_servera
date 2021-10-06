@@ -1,5 +1,5 @@
 include ../../blocks/favicon/favicon.pug
-//- include ../../blocks/header/header.pug
+include ../../blocks/header/header.pug
 //- include ../../blocks/main-screen/main-screen.pug
 //- include ../../blocks/advantages-screen/advantages-screen.pug
 //- include ../../blocks/prices-screen/prices-screen.pug
@@ -7,6 +7,8 @@ include ../../blocks/favicon/favicon.pug
 //- include ../../blocks/cooperation-screen/cooperation-screen.pug
 //- include ../../blocks/collaboration-stages-screen/collaboration-stages-screen.pug
 include ../../blocks/contact-us/contact-us.pug
+include ../../blocks/footer/footer.pug
+
 doctype html
 html(lang="ru")
   head
@@ -16,7 +18,7 @@ html(lang="ru")
     //-В папке build будет лежать файл фавикона, строки которая находится ниже позволит подцепить этот файл
     +favicon()
   body
-    //- +header()
+    +header()
     main
       //- +main-screen({
       //-   title: "Пиломатериал от производителя",
@@ -131,4 +133,7 @@ html(lang="ru")
           {placeholder: "Сообщение", type:"textArea"},
         ],
         buttonText: "отправить"
+      })
+      +footer({
+        sign: "Все права защищены"
       })

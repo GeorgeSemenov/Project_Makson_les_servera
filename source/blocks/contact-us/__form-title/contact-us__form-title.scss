@@ -4,4 +4,9 @@
   line-height: 23px;
   letter-spacing: -0.4px;
   margin-bottom: 33px;
+  @media (max-width: $lg - 1px){
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
 }
