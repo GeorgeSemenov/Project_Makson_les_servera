@@ -5,7 +5,8 @@ include ../../blocks/favicon/favicon.pug
 //- include ../../blocks/prices-screen/prices-screen.pug
 //- include ../../blocks/about-us-screen/about-us-screen.pug
 //- include ../../blocks/cooperation-screen/cooperation-screen.pug
-include ../../blocks/collaboration-stages-screen/collaboration-stages-screen.pug
+//- include ../../blocks/collaboration-stages-screen/collaboration-stages-screen.pug
+include ../../blocks/contact-us/contact-us.pug
 doctype html
 html(lang="ru")
   head
@@ -110,13 +111,14 @@ html(lang="ru")
       //-   description: "Специализируемся по продаже пиломатериалов: лесозаготовка досок, бруса, фанеры.",
       //-   buttonText: "Связаться с нами"
       //- })
-      +collaboration-stages-screen({
-        title: "Этапы взаимодействия с нами",
-        description: "Этапы позволяют наиболее камфортно воспользоваться услугами компании “Лес Севера”. Быстро, качественно и в срок, неотемленные сосотавляющии нашей фирмы.",
-        stages:[
-          {stageText:"Связаться с нашим менеджером"},
-          {stageText:"Определить тип пиломатериала"},
-          {stageText:"Определение цены товара и доставки"},
-          {stageText:"Согласование оплаты и доставки"},
-        ]
-      })
+      //- +collaboration-stages-screen({
+      //-   title: "Этапы взаимодействия с нами",
+      //-   description: "Этапы позволяют наиболее камфортно воспользоваться услугами компании “Лес Севера”. Быстро, качественно и в срок, неотемленные сосотавляющии нашей фирмы.",
+      //-   stages:[
+      //-     {stageText:"Связаться с нашим менеджером"},
+      //-     {stageText:"Определить тип пиломатериала"},
+      //-     {stageText:"Определение цены товара и доставки"},
+      //-     {stageText:"Согласование оплаты и доставки"},
+      //-   ]
+      //- })
+      +contact-us({})

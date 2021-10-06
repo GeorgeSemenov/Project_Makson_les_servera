@@ -1,0 +1,14 @@
+include __pic/contact-us__pic.pug
+include __text-area/contact-us__text-area.pug
+include __input/contact-us__input.pug
+include __form-title/contact-us__form-title.pug
+include __form/contact-us__form.pug
+include __content/contact-us__content.pug
+include __description/contact-us__description.pug
+include __title/contact-us__title.pug
+include ../btn/btn.pug
+mixin contact-us(modifier)
+  .contact-us&attributes(attributes)
+    +contact-us__title(modifier)
+    +contact-us__description(modifier)
+    +contact-us__content(modifier)(class="content")

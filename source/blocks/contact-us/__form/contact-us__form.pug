@@ -1,0 +1,10 @@
+mixin contact-us__form(modifier)
+  if modifier["inputs"] == undefined
+    - modifier["inputs"] = [{}];
+  form.contact-us__form&attributes(attributes)
+    +contact-us__form-title(modifier)
+    each input in modifier.inputs
+      if input.type == "textArea"
+        +contact-us__text-area(input)
+      else
+        +contact-us__input(input)

@@ -1,0 +1,4 @@
+mixin contact-us__title(modifier)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h2.contact-us__title&attributes(attributes)!=modifier.title
