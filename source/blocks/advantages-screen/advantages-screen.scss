@@ -13,7 +13,8 @@
   @include py(87px);
   text-align: center;
   @media (max-width: $md){
-    @include py(77px);
+    padding-top: 77px;
+    padding-bottom: 10px;
     @include px(15px);
   }
   @media (max-width: $sm){

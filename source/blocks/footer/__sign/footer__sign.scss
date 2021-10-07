@@ -3,4 +3,15 @@
   font-size: 15px;
   line-height: 18px;
   color: $footer__sign--Color;
+  position: relative;
+  top: 8px;
+  @media (max-width: $xl - 1px){
+    order: 5;
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+  }
+  @media (max-width: $sm - 1px){
+
+  }
 }

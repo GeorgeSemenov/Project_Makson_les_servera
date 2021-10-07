@@ -1,4 +1,15 @@
-.footer__content {
-  display: flex;
-  jusfity-content: left;
+.footer{
+  .footer__content {
+    display: flex;
+    justify-content: left;
+    @media (max-width: $xl - 1px){
+      max-width: 512px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    @media (max-width: $sm - 1px){
+      justify-content: center;
+      max-width: 180px;
+    }
+  }
 }

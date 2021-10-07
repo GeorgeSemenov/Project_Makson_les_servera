@@ -10,6 +10,8 @@
 .prices-screen {
   font-family: 'Russo One' ,"Arial" , sans-serif;
   @include px(20px);
+  padding-top: 64px;
+  padding-bottom: 30px;
   @media (max-width: $md - 1px){
     @include px(15px);
   }

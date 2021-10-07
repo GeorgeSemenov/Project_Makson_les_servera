@@ -14,4 +14,11 @@
   font-size: 16px;
   line-height: 19px;
   font-family: 'Roboto' ,"Arial" , sans-serif;
+  @media (max-width: $xl - 1px){
+    padding-top: 49px;
+    padding-bottom: 95px;
+  }
+  @media (max-width: $sm - 1px){
+    padding-bottom: 57px;
+  }
 }
