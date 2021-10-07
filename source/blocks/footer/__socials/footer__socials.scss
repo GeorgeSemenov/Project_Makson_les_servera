@@ -1,1 +1,11 @@
-.footer__socials {}
+.footer__socials {
+  margin-right: 52px;
+  .socials__social {
+    path{
+      fill: white;
+    }
+    &:hover path{ fill: $socials__social--fill;}
+    &:active path{ fill: darken($socials__social--fill,20%);}
+
+  }
+}

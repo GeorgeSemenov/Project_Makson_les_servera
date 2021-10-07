@@ -1,6 +1,8 @@
 .footer__navigation {
   color: $footer__navigation--Color;
+  margin-right: 40px;
   .navigation__item{
+    margin-right: 20px;
     a{
       color: $inherit;
     }

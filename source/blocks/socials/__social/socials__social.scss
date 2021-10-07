@@ -1,4 +1,5 @@
 .socials__social {
+  @include transition();
   &:hover path{
     fill: $socials__social--fill;
   }

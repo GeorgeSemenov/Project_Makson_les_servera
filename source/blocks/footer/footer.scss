@@ -11,4 +11,7 @@
 .footer {
   background-color: $footer--BGColor;
   @include py(78px);
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Roboto' ,"Arial" , sans-serif;
 }

@@ -3,5 +3,7 @@
 
   &_youtube{
     fill: $icon_youtube--fill;
+    &:hover{ fill: $icon_youtube-hover--fill;}
+    &:active{ fill: $icon_youtube-active--fill;}
   }
 }
