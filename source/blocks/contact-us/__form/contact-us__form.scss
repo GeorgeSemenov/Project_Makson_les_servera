@@ -13,8 +13,9 @@
     box-sizing: border-box;
     padding-bottom: 90px;
     margin-bottom: 59px;
+    margin-right: 0px;
   }
-  @media (max-width: $lg - 1px){
+  @media (max-width: $md - 1px){
     margin-right: 0px;
     width: 300px;
     padding-top: 18px;

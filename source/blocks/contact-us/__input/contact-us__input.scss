@@ -10,6 +10,9 @@
     color: $contact-us__input-placeholder--Color;
   }
   @media (max-width: $lg - 1px){
+    margin-bottom: 20px;
+  }
+  @media (max-width: $sm - 1px){
     margin-bottom: 18px;
   }
 }

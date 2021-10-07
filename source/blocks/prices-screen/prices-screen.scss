@@ -12,7 +12,8 @@
   @include px(20px);
   padding-top: 64px;
   padding-bottom: 30px;
-  @media (max-width: $md - 1px){
+  @media (max-width: $lg - 1px){
+    padding-top: 49px;
     @include px(15px);
   }
 }

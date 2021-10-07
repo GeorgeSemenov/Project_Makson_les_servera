@@ -7,13 +7,13 @@
   flex-direction: column;
   align-items: center;
   @include py(76px);
-  @media (max-width: $md){
+  @media (max-width: $lg - 1px){
     padding-top: 76px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
   @media (max-width: $sm - 1px){
     padding-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 25px;
     @include px(10px);
   }
 }

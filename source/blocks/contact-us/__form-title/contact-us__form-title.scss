@@ -7,6 +7,9 @@
   @media (max-width: $lg - 1px){
     font-size: 18px;
     line-height: 21px;
+    margin-bottom: 36px;
+  }
+  @media (max-width: $sm - 1px){
     margin-bottom: 20px;
   }
 }

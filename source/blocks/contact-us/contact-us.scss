@@ -14,4 +14,10 @@
   align-items: center;
   padding-top: 2px;
   padding-bottom: 74px;
+  @media (max-width: $lg - 1px){
+    padding-top: 16px;
+  }
+  @media (max-width: $sm - 1px){
+    padding-bottom: 68px;
+  }
 }

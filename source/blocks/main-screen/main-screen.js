@@ -1,7 +1,6 @@
+const scrollTo = require('../../JS-components/scrollTo.js');
+
 $(document).ready(function(){
-  $(".main-screen__arrow").click(function(){
-    $('html, body').animate({
-      scrollTop: $(".advantages-screen").offset().top
-    }, 2000);
-  })
+  scrollTo(".main-screen__arrow",".advantages-screen",1000);
+  scrollTo('.main-screen__btn',".contact-us");
 })
