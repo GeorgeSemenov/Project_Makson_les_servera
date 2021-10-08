@@ -5,4 +5,4 @@ mixin navigation(modifier)
   nav.navigation&attributes(attributes)
     ul
       each item in modifier.navigationItems
-        +navigation__item(item)
+        +navigation__item(item)(data-target=item.target)

@@ -1,6 +1,8 @@
 $(document).ready(function(){
-  alert('loh');
-  $(".navigationItem").click(function(){
-    console.log($(this).data("id"));
+  $(".navigation__item").click(function(){
+    let target = $(this).data("target");
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 1500);
   })
 })
