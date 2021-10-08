@@ -4,6 +4,9 @@ let logo                     = $('.header__logo');
 let navigation               = $('.header__navigation');
 let socials                  = $('.header__socials');
 let headerFullHeight;
+
+import '../navigation/navigation.js';
+
 $(document).ready(function(){
   initialize();
   window.addEventListener('resize', function(event) {
@@ -24,6 +27,7 @@ $(document).ready(function(){
 
     }//Конец условия для широт меньше XL
   })
+
 })
 
 function initialize(){

@@ -1,5 +1,7 @@
 import Swiper from '../../vendor/swiperJS/swiper-bundle.js';
+const scrollTo = require('../../JS-components/scrollTo.js');
 $(document).ready(function(){
+  //приделываем свайпер
   const swiper = new Swiper('.swiper', {
     loop: true,
     // slidesPerView: 4,
@@ -41,4 +43,7 @@ $(document).ready(function(){
       },
     }
   });
+
+  //Приделываем отброс в понос к форме обратной связи
+  scrollTo('.prices-screen .price-card__btn',".contact-us",1000);
 })

@@ -6,6 +6,7 @@
   padding: 20px;
   width: 100%;
   margin-bottom: 21px;
+  box-sizing: border-box;
   &::placeholder {
     color: $contact-us__input-placeholder--Color;
   }

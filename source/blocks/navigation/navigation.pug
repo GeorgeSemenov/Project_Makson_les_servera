@@ -1,7 +1,7 @@
 include __item/navigation__item.pug
 mixin navigation(modifier)
   if modifier["navigationItems"] == undefined
-    - modifier["navigationItems"] = [{navigationItem: 'О компании'},{navigationItem: 'Продажи'},{navigationItem: 'Особенности'},{navigationItem: 'Контакты'}];
+    - modifier["navigationItems"] = [{navigationItem: 'О компании', target: '.about-us-screen'},{navigationItem: 'Продажи', target: '.prices-screen'},{navigationItem: 'Особенности', target: '.cooperation-screen'},{navigationItem: 'Контакты', target: '.contact-us'}];
   nav.navigation&attributes(attributes)
     ul
       each item in modifier.navigationItems
