@@ -3,7 +3,7 @@ let header                   = $('.header');
 let logo                     = $('.header__logo');
 let navigation               = $('.header__navigation');
 let socials                  = $('.header__socials');
-let headerFullHeight;
+let headerFullHeight = 0;
 
 import '../navigation/navigation.js';
 
@@ -60,25 +60,31 @@ function initialize(){
 function getFullNodeHeight(nodeArr){
   let totalSum=0;
   nodeArr.forEach(function(node,i,arr){
-    let height        = parseInt(node.css('height'),10);
-    let marginTop     = parseInt(node.css('margin-top'),10);
-    let marginBottom  = parseInt(node.css('margin-bottom'),10);
-    let paddingTop    = parseInt(node.css('padding-top'),10);
-    let paddingBottom = parseInt(node.css('padding-bottom'),10);
-    let borderTop     = parseInt(node.css('border-top'),10);
-    let borderBottom  = parseInt(node.css('border-bottom'),10);
+    let height        = propToNumb('height',node);
+    let marginTop     = propToNumb('margin-top',node);
+    let marginBottom  = propToNumb('margin-bottom',node);
+    let paddingTop    = propToNumb('padding-top',node);
+    let paddingBottom = propToNumb('padding-bottom',node);
+    let borderTop     = propToNumb('border-top',node);
+    let borderBottom  = propToNumb('border-bottom',node);
     let sum           = (height + marginTop + marginBottom + paddingTop + 
                          paddingBottom + borderBottom + borderTop);
     totalSum += sum;
   })
   // console.log(`height=${height}`);
-  // console.log(`marginTop = ${marginTop}`);
-  // console.log(`marginBottom = ${marginBottom}`);
-  // console.log(`paddingTop = ${paddingTop}`);
-  // console.log(`paddingBottom = ${paddingBottom}`);
-  // console.log(`borderTop = ${borderTop}`);
-  // console.log(`borderBottom = ${borderBottom}`);
+    // console.log(`marginTop = ${marginTop}`);
+    // console.log(`marginBottom = ${marginBottom}`);
+    // console.log(`paddingTop = ${paddingTop}`);
+    // console.log(`paddingBottom = ${paddingBottom}`);
+    // console.log(`borderTop = ${borderTop}`);
+    // console.log(`borderBottom = ${borderBottom}`);
   return totalSum;
   // return (height + marginTop + marginBottom + paddingTop + 
   //   paddingBottom + borderBottom + borderTop);
+}
+
+function propToNumb (property , node){
+  let result = parseInt(node.css(property),10);
+  result = isNaN(result) ? 0 : result;
+  return result;
 }

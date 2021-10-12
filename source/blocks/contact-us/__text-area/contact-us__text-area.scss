@@ -5,13 +5,13 @@
   border-radius: 5px;
   padding: 20px;
   width: 100%;
-  height: 73px;
+  height: 115px;
   margin-bottom: 20px;
   box-sizing: border-box;
   &::placeholder {
     color: $contact-us__text-area-placeholder--Color;
   }
   @media (max-width: $md - 1px){
-    height: 69px;
+    height: 111px;
   }
 }
