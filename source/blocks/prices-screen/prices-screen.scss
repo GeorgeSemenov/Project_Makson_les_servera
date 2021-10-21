@@ -8,7 +8,7 @@
 @import '../../vendor/swiperJS/swiper-bundle';
 
 .prices-screen {
-  font-family: 'Russo One' ,"Arial" , sans-serif;
+  @include regular-font
   @include px(20px);
   padding-top: 64px;
   padding-bottom: 30px;

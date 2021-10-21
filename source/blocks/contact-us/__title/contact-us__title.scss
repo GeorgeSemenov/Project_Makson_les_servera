@@ -1,5 +1,5 @@
 .contact-us__title {
-  font-family: 'Russo One' ,"Arial" , sans-serif;
+  @include regular-font
   font-size: 38px;
   line-height: 43px;
   color: $contact-us__title--Color;
