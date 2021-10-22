@@ -21,12 +21,12 @@
   @include regular-font
 
   @media (max-width: $md){
-    // background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-tablet.png) no-repeat;
+    // background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-tablet.jpg) no-repeat;
     background-size: cover;
     padding-bottom: 39px;
   }
   @media (max-width: $sm){
-    // background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-mobile.png);
+    // background: $main-screen--BGColor, url(../../img/main-screen-bg-pic-mobile.jpg);
     padding-bottom: 30px;
   }
 }

@@ -6,17 +6,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: $cooperation-screen--BGColor, url(../../img/shinyForestBackground-min.png), center ;
+  background: $cooperation-screen--BGColor, url(../../img/shiny-forest-background-desktop.jpg), center ;
   padding-top: 111px;
   padding-bottom: 102px;
   @media (max-width: $lg - 1px){
     padding-bottom: 100px;
     padding-top: 102px;
-    background: $cooperation-screen--BGColor, url(../../img/shinyForestBackgroundLaptop-min.png), center ;
+    background: $cooperation-screen--BGColor, url(../../img/shiny-forest-background-laptop.jpg), center ;
   }
   @media (max-width: $sm - 1px){
     padding-top: 60px;
     padding-bottom: 70px;
-    background: $cooperation-screen--BGColor, url(../../img/shinyForestBackgroundMobile-min.png), center ;
+    background: $cooperation-screen--BGColor, url(../../img/shiny-forest-background-mobile.jpg), center ;
   }
 }
